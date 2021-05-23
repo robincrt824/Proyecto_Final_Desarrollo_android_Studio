@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity2">
+
+
+    <Button
+        android:id="@+id/btnini"
+        android:layout_width="111dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#BF3F3F"
+        android:text="Inicio"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="168dp"
+        android:layout_height="66dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnini"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/twopctyech"
+        tools:layout_editor_absoluteY="6dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2contacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Conócenos"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnini" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="ExtraText">
+
+
+        // para deslizar en la pantalla
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            tools:layout_editor_absoluteX="13dp"
+            tools:layout_editor_absoluteY="128dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="13dp"
+                tools:layout_editor_absoluteY="0dp">
+                //para que no vote error en el sistema se agrega en un LinearLayoout
+
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="212dp"
+                    android:gravity="center"
+                    android:text="Somos una empresa la cual proporcionma soluciones informaticas a los usuarios, proporcionando asesoramiento e intalacion de equipos POS , seguridad y demas ambitos tecnologicos. Todo en pro de aunmentar el redimiento y fiablidad de los sitemas que se desarrollen en elambito de trabajo."
+                    android:textSize="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.466"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2contacto" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    app:layout_constraintBottom_toTopOf="@+id/description"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2contacto"
+                    app:layout_constraintVertical_bias="0.48000002"
+                    app:srcCompat="@drawable/consumer" />
+
+
+                <TextView
+                    android:id="@+id/description2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="Somos una empresa la cual proporcionma soluciones informaticas a los usuarios, proporcionando asesoramiento e intalacion de equipos POS , seguridad y demas ambitos tecnologicos. Todo en pro de aunmentar el redimiento y fiablidad de los sitemas que se desarrollen en elambito de trabajo."
+                    android:textSize="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.466"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2contacto" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
